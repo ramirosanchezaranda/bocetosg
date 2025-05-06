@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "REM", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+}
+
+:root {
+  --primary-dark: #414141;
+  --primary-light: #DDDDDD;
+  --accent-purple: #57005F;
+  --accent-light: #EEB4FF;
+}
+
+.glass-effect {
+  background: rgba(87, 0, 95, 0.87);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  border: 1px solid rgba(238, 180, 255, 0.932);
+  transition: all 0.3s ease;
+}
+
+.glass-effect:hover {
+  background: rgba(87, 0, 95, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(238, 180, 255, 0.3);
+}
+
+.tournament-card {
+  background: var(--primary-dark);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.tournament-card:hover {
+  transform: scale(1.02);
+}
+
+.custom-button {
+  background: var(--accent-purple);
+  color: var(--primary-light);
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+  background: var(--accent-light);
+  color: var(--accent-purple);
+}
+
+.nav-link {
+  color: var(--primary-light);
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--accent-light);
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.bento-grid {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.infinite-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.rem-thin {
+  font-family: "REM", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.rem-light {
+  font-family: "REM", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rem-regular {
+  font-family: "REM", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rem-medium {
+  font-family: "REM", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.rem-semibold {
+  font-family: "REM", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.rem-bold {
+  font-family: "REM", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rem-extrabold {
+  font-family: "REM", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.rem-black {
+  font-family: "REM", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
