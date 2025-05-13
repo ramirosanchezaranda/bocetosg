@@ -1,6 +1,6 @@
 export default function Sponsors() {
   return (
-    <section className="bg-[#DDDDDD] py-20 overflow-hidden">
+    <section className="bg-[#DDDDDD] py-20 overflow-hidden navbar-glass">
       <h2 className="text-4xl font-bold text-[#414141] text-center mb-12">Nuestros Sponsors</h2>
       <div className="relative flex">
         <div className="flex infinite-scroll">

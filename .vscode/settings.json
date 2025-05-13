@@ -1,0 +1,8 @@
+{
+    "liveServer.settings.port": 5501,
+    "editor.autoClosingBrackets": "languageDefined",
+    "editor.autoClosingComments": "languageDefined",
+    "editor.experimental.preferTreeSitter.typescript": false,
+    "editor.experimentalEditContextEnabled": false,
+    "editor.experimentalGpuAcceleration": "off"
+}

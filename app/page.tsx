@@ -8,10 +8,10 @@ import Footer from '@/src/components/Footer'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#414141]">
+    <main className="min-h-screen">
       <Hero />
-      <Tournaments />
       <QrSection />
+      <Tournaments />
       <News />
       {/*<About />*/}
       <Sponsors />

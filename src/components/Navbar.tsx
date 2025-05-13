@@ -1,22 +1,20 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function Navbar() {
   return (
-    <nav className="fixed w-full z-50 glass-effect px-6 py-2">
+    <nav className="absolute navbar-glass fixed w-[90%] top-0 z-50 left-[5%] shadow-2xl py-4 blur-3xl">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <img
-            src="/saltagaminglogo.png"
+            src="/saltagaminglogo-removebg-preview.png"
             alt="Salta Gaming Logo"
-            width={110}
+            width={100}
             height={60}
             className="h-10 w-auto"
-            style={{maxHeight:'40px'}}
           />
         </Link>
         
-        <div className="flex gap-8 rem-medium">
+        <div className="flex gap-8 rem-medium font-bold text-shadow-lg/30">
           <Link href="/noticias" className="nav-link">
             Noticias
           </Link>

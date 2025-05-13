@@ -5,27 +5,27 @@ const news = [
   {
     title: "Próximo Torneo de League of Legends",
     content: "¡No te pierdas nuestro próximo torneo!",
-    image: "/news1.jpg"
+    image: "/jugando1.png"
   },
   {
     title: "Próximo Torneo de League of Legends",
     content: "¡No te pierdas nuestro próximo torneo!",
-    image: "/news1.jpg"
+    image: "/jugando1.png"
   },
   {
     title: "Próximo Torneo de League of Legends",
     content: "¡No te pierdas nuestro próximo torneo!",
-    image: "/news1.jpg"
+    image: "/jugando1.png"
   },
   {
     title: "Próximo Torneo de League of Legends",
     content: "¡No te pierdas nuestro próximo torneo!",
-    image: "/news1.jpg"
+    image: "/jugando1.png"
   },
   {
     title: "Próximo Torneo de League of Legends",
     content: "¡No te pierdas nuestro próximo torneo!",
-    image: "/news1.jpg"
+    image: "/jugando1.png"
   },
   // Añade más noticias aquí
 ]
@@ -35,7 +35,7 @@ export default function News() {
 
   return (
     <section className="bento-grid bg-[#414141] py-20">
-      <h2 className="text-4xl font-bold text-white text-center mb-12">Noticias</h2>
+      <h2 className="text-4xl font-bold text-[#DDDDDD] text-center mb-12">Noticias</h2>
       <div 
         className="flex overflow-hidden"
         onMouseEnter={() => setIsPaused(true)}
@@ -46,8 +46,8 @@ export default function News() {
             <div key={index} className="min-w-[300px] mx-4">
               <div className="glass-effect p-6">
                 <img src={item.image} alt={item.title} className="w-full h-48 object-cover rounded-lg mb-4" />
-                <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-white/80">{item.content}</p>
+                <h3 className="text-xl font-bold text-[#DDDDDD] mb-2">{item.title}</h3>
+                <p className="text-[#DDDDDD]/80">{item.content}</p>
               </div>
             </div>
           ))}
