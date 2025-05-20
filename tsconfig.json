@@ -1,4 +1,9 @@
 {
+
+  "compilerOptions": {
+    "types": ["@types/estree"]
+  },
+  "types": ["estree"],
   "compilerOptions": {
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -20,7 +25,8 @@
     ],
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "types": ["node", "react", "react-dom", "estree", "json-schema", "json5"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
